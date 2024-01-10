@@ -9,11 +9,8 @@
         <Nuxt-link to="/about">
           <li>About</li>
         </Nuxt-link>
-        <Nuxt-link to="/products">
+        <Nuxt-link to="/products" class="btn">
           <li>Products</li>
-        </Nuxt-link>
-        <Nuxt-link to="/products/30" class="btn">
-          <li>Product-30</li>
         </Nuxt-link>
       </ul>
     </nav>
@@ -23,18 +20,15 @@
   </div>
 
   <footer class="border-t-2">
-    <ul class="flex gap-4 container mx-auto px-4">
+    <ul class="flex gap-4 container mx-auto px-4 items-center">
       <Nuxt-link to="/">
         <li>Home</li>
       </Nuxt-link>
       <Nuxt-link to="/about">
         <li>About</li>
       </Nuxt-link>
-      <Nuxt-link to="/products">
+      <Nuxt-link to="/products" class="btn">
         <li>Products</li>
-      </Nuxt-link>
-      <Nuxt-link to="/products/30">
-        <li>Product-30</li>
       </Nuxt-link>
     </ul>
   </footer>
