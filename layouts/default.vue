@@ -1,25 +1,29 @@
 <template>
-  <header>
-    <ul class="flex">
-      <Nuxt-link to="/">
-        <li>Home</li>
-      </Nuxt-link>
-      <Nuxt-link to="/about">
-        <li>About</li>
-      </Nuxt-link>
-      <Nuxt-link to="/products">
-        <li>Products</li>
-      </Nuxt-link>
-      <Nuxt-link to="/products/30">
-        <li>Product-30</li>
-      </Nuxt-link>
-    </ul>
+  <header class="shadow-sm bg-white">
+    <nav class="container mx-auto flex justify-between p-4">
+      <div class="font-bold">NUXT 3</div>
+      <ul class="flex gap-4 items-center">
+        <Nuxt-link to="/">
+          <li>Home</li>
+        </Nuxt-link>
+        <Nuxt-link to="/about">
+          <li>About</li>
+        </Nuxt-link>
+        <Nuxt-link to="/products">
+          <li>Products</li>
+        </Nuxt-link>
+        <Nuxt-link to="/products/30" class="btn">
+          <li>Product-30</li>
+        </Nuxt-link>
+      </ul>
+    </nav>
   </header>
+  <div class="container mx-auto px-4 my-10">
+    <slot/>
+  </div>
 
-  <slot/>
-
-  <footer>
-    <ul class="flex">
+  <footer class="border-t-2">
+    <ul class="flex gap-4 container mx-auto px-4">
       <Nuxt-link to="/">
         <li>Home</li>
       </Nuxt-link>
@@ -41,13 +45,4 @@
   color: lightgreen;
 }
 
-.flex {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.flex * {
-  text-decoration: none;
-}
 </style>
