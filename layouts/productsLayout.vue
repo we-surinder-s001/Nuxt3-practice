@@ -16,6 +16,10 @@
     </ul>
   </header>
 
+  <h1>
+    this is products layout
+  </h1>
+
   <slot/>
 
   <footer>

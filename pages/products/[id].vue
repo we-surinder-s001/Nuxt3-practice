@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+  layout: "products-layout"
+})
 const {id} = useRoute().params
 </script>
 
