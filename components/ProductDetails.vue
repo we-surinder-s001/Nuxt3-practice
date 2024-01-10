@@ -15,6 +15,10 @@ const { details } = defineProps(["details"]);
         <p class="text-xl my-7">Price- Rs.{{ details.price }}</p>
         <h3 class="font-bold border-b-2 mb-4 pd-2">Product Details</h3>
         <p class="mb-7">{{ details.description }}</p>
+        <button class="btn flex items-center">
+          <i class="material-icons mr-2">add_shopping_cart</i>
+          <span>Add to cart</span>
+        </button>
       </div>
     </div>
   </div>

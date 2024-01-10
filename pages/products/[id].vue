@@ -18,6 +18,10 @@ if (!product.value) {
 </script>
 
 <template>
+  <Head>
+    <Title>Product: {{ product.title }}</Title>
+    <Meta name="description" :content="product.description" />
+  </Head>
   <div>
     <ProductDetails :details="product" />
     <NuxtLink to="/products/asdf">go</NuxtLink>
