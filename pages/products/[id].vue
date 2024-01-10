@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+const {id} = useRoute().params
+</script>
 
 <template>
   <h1>
-    ID
+    {{ id }}
   </h1>
 </template>
