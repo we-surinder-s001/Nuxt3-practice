@@ -2,11 +2,11 @@
 definePageMeta({
   layout: "products-layout",
 });
-const { id } = useRoute().params;
+const {id} = useRoute().params;
 
 const uri = `https://fakestoreapi.com/products/${id}`;
 
-const { data: product } = await useFetch(uri, { key: id });
+const {data: product} = await useFetch(uri, {key: id});
 
 if (!product.value) {
   throw createError({
@@ -20,10 +20,10 @@ if (!product.value) {
 <template>
   <Head>
     <Title>Product: {{ product.title }}</Title>
-    <Meta name="description" :content="product.description" />
+    <Meta name="description" :content="product.description"/>
   </Head>
   <div>
-    <ProductDetails :details="product" />
+    <ProductDetails :details="product"/>
     <NuxtLink to="/products/asdf">go</NuxtLink>
   </div>
 </template>
