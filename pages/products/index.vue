@@ -1,9 +1,9 @@
 <script setup>
-useHead({
-  title: "App Product page",
-});
 definePageMeta({
   layout: "products-layout",
+});
+useHead({
+  title: "App Product page",
 });
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
 </script>

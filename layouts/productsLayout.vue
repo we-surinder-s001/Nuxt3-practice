@@ -17,7 +17,7 @@
   </header>
 
   <div class="container mx-auto px-4 my-10">
-    <slot/>
+    <slot />
   </div>
 
   <footer class="border-t-2">
